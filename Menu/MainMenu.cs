@@ -100,10 +100,10 @@ namespace TMADapper.Menu
                 switch (user.Role)
                 {
                     case "Tutee":
-                    _tuteeMenu.WelcomeTutee();
+                    _tuteeMenu.WelcomeTutee(user);
                     break;
                     case "Tutor":
-                    _tutorMenu.WelcomeTutor();
+                    _tutorMenu.WelcomeTutor(user);
                     break;
                     case "Admin":
                     break;

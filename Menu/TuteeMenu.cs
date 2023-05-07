@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using TMADapper.Model.entities;
 using TMADapper.Service.Interface;
 namespace TMADapper.Menu
 {
@@ -17,9 +18,9 @@ namespace TMADapper.Menu
 
         public ITuteeService TuteeService => _tuteeService;
 
-        public void WelcomeTutee()
+        public void WelcomeTutee(User user)
         {
-            Console.Write("login successful");
+            Console.Write($"Welcome {user.FirstName} {user.LastName}");
         }
     }
 }
